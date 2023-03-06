@@ -1,0 +1,15 @@
+{
+    "name": "esteban/listadodeprofes",
+    "autoload": {
+        "psr-4": {
+            "Esteban\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Esteban russo",
+            "email": "oerusso28@gmail.com"
+        }
+    ],
+    "require": {}
+}
