@@ -1,0 +1,2 @@
+[12:45:58 07-Mar-2023] [localhost/PHP-VIDAMRR/CRUDSPROPIOS/LISTADODEPROFES/src/view/create.php] [17] : [NOTICE] - El registro fue creado con exito 
+[12:49:38 07-Mar-2023] [localhost/PHP-VIDAMRR/CRUDSPROPIOS/LISTADODEPROFES/src/view/home.php] [12] : [INFO] - Profesor Elimiando 

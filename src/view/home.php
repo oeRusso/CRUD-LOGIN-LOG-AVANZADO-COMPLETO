@@ -1,12 +1,15 @@
 
 <?php
 
+use Esteban\claselog\Logger;
 use Esteban\models\Profesores;
     $profesores = Profesores::getAll();
 
     if (isset($_GET['metodo']) && isset($_GET['uuid'])) {
         $profesores = new Profesores();
         $profesores->delete($_GET['uuid']);
+
+        Logger::info('Profesor Elimiando');
         header('location:./?view=home');
     }
     

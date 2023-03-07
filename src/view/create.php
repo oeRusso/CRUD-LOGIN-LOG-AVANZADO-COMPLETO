@@ -1,5 +1,6 @@
 <?php
     use Esteban\models\Profesores;
+    use Esteban\claselog\Logger;
 
     if (count($_POST) > 0) {
         $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : 'Apellido de prueba';
@@ -12,6 +13,8 @@
         
         $profesores->save();
 
+
+        Logger::notice('El registro fue creado con exito');
         header('location:./?views=home');
     
     }

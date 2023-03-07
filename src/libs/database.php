@@ -1,7 +1,7 @@
 <?php
 
 namespace Esteban\libs;
-
+use Esteban\claselog\Logger;
 use PDO;
 use PDOException;
 
@@ -38,7 +38,7 @@ class Database{
 
         }catch(PDOException $th){
 
-            throw $th;
+            Logger::fatal("Database connection failed", [$th->getMessage()]); 
         }
     }
 }
